@@ -1,41 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <form>
-    </form>
-    <table>
-        <tr>
-            <td>
-                <label>Username</label>
-            </td>
-            <td>
-                :
-            </td>
-            <td>
-                <input type='text'>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Password</label>
-            </td>
-            <td>
-                :
-            </td>
-            <td>
-                <input type='password' placeholder='isi password'>
-            </td>
-        </tr>
-    </table>
-    <input type='submit' value='login'>
-    <a href='http://localhost:8000/'>Back to home</a>
-</body>
-
-</html>
+{% extends 'base.html' %} {% block content %}
+<form>
+</form>
+<table>
+    <tr>
+        <td>
+            <label>Username</label>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <input type='text'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Password</label>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <input type='password' placeholder='isi password'>
+        </td>
+    </tr>
+</table>
+<input type='submit' value='login'>
+<a href='http://localhost:8000/'>Back to home</a> {% endblock %}
